@@ -1,27 +1,25 @@
 <template>
-  <div id='date'>
-    <label>Enter dates in "Day/Month" formats, separated with commas</label>
-    <input type="text" v-model="input" />
-    <p>{{date}}</p>
-  </div>
+  <label>Enter a date in the 'month/day' format : </label>
 </template>
 
 <script>
-export default {
-  name: 'InputUser',
-  props: {
-    date: String,
+
+export default{
+  name:'InputUser',
+  data(){
+    return{
+      dates:''
+    }
+  },
+  methods: {
+    updateValue: function(dates){
+      this.$emit('input', dates)
+    }
   }
 }
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-div{
-  display: flex;
-  flex-direction: column;
-}
 
 </style>
