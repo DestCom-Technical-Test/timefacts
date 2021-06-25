@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id='date'>
+    <label>Enter dates in "Day/Month" formats, separated with commas</label>
+    <input type="text" v-model="date" />
+    <p> {{date}} </p>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
+  },
+  data(){
+    return{
+      date: ''
+    }
   }
 }
 </script>
@@ -22,5 +29,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
 }
 </style>
