@@ -1,24 +1,8 @@
-# timefacts
+# Timefacts
 
-## Project setup
-```
-npm install
-```
+Timefacts is a web site realized under Vue, displaying, after request of a date by the user, a fact related to this date
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## What have I used?
+I used Vue CLI and I created a node API via Express calling numbersapi.com to avoid complications with CORS (Available at https://api-timefacts.herokuapp.com/, when making your request, please write in the format api-timefacts.herokuapp.com/api/month/day)
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
