@@ -26,7 +26,7 @@ export default {
             if (!(parseInt(this.month) > 12)) {
                 if (!(parseInt(this.date) < 1)) {
                     if (!(parseInt(this.month) < 1)) {
-                        let url = 'http://www.numbersapi.com/' + this.month + '/' + this.date + '/date';
+                        let url = 'https://api-timefacts.herokuapp.com/api/' + this.month + '/' + this.date;
                         console.log(url)
                         axios
                             .get(url)
