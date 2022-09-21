@@ -1,5 +1,7 @@
 # Timefacts
 
+> :warning: **Due to heroku's decision to discontinue its free plan, the demo is no longer online and will not be put back online.
+
 Timefacts is a web site realized under Vue, displaying, after request of a date by the user, a fact related to this date
 
 ## What have I used?
